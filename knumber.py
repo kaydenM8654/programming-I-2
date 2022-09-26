@@ -1,6 +1,6 @@
 from stanfordkarel import *
 
-1000000000000000
+
 class ktools: 
   def m(self):
     """shorthand for move"""
@@ -110,7 +110,7 @@ class ktools:
           self.m()
     pass
 
-  def nm(self, num):
+  def mm(self, num):
     """move multiple"""
     for number in range(num):
       self.m()
@@ -129,17 +129,47 @@ class ktools:
       self.m()
     self.put()
 
+  def one(self):
+    self.tl()
+    self.mm(4)
+    self.ta()
+    self.putm(5)
+    self.tl()
+    self.mm(2)
+
+  def zero(self):
+    self.putm(4)
+    self.ta()
+    self.mm(3)
+    self.tr()
+    self.m()
+    self.putm(4)
+    self.tr()
+    self.m()
+    self.putm(3)
+    self.tr()
+    self.m()
+    self.putm(3)
+    self.m()
+    self.tl()
+    self.m()
+    self.m()
+
   
 
 def main():
     """ Karel code goes here! """
     kt=ktools()
-    kt.tl()
-    kt.nm(5)
-    kt.ta()
-    kt.putm(5)
-    kt.tl()
-    kt.nm(2)
+    kt.one()
+    kt.zero()
+    kt.zero()
+    kt.zero()
+    kt.zero()
+    kt.zero()
+    kt.zero()
+    kt.zero()
+    kt.zero()
+    kt.zero()
     pass
 
 
