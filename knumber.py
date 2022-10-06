@@ -155,21 +155,17 @@ class ktools:
     self.m()
     self.m()
 
+  def zerom(self, num):
+    """put zero multiple"""
+    for _ in range(0, num):
+      self.zero()
   
 
 def main():
     """ Karel code goes here! """
     kt=ktools()
     kt.one()
-    kt.zero()
-    kt.zero()
-    kt.zero()
-    kt.zero()
-    kt.zero()
-    kt.zero()
-    kt.zero()
-    kt.zero()
-    kt.zero()
+    kt.zerom(9)
     pass
 
 
